@@ -1,0 +1,55 @@
+body{
+    margin: 0%;
+    background-color: whitesmoke;
+}
+body header{
+    height: 100px;
+    background-color: thistle;
+}
+body header h1{
+    padding-top: 15px;
+    color: rgba(204, 16, 16, 0.89);
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+body main{
+    height: 350px;
+    margin-top: 40px;
+    background-color: turquoise;
+}
+body main h3{
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+#firstParagraph{
+    color: rgb(18, 71, 1);
+    font-style: oblique;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+#secondParagraph{
+    color: rgb(18, 71, 1);
+    font-style: oblique;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+#thirdParagraph{color: rgb(18, 71, 1);
+    font-style: oblique;
+    font-size: 20px;
+}
+footer{
+    background-color:thistle  ;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 0%;
+}
+footer p{
+    text-align: center;
+    color: rgba(204, 16, 16, 0.89);
+    font-weight: 800;
+    vertical-align: top;
+    padding-top: 30px;
+    height: 30px;
+}
