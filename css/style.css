@@ -14,8 +14,9 @@ body header h1{
     font-weight: 700;
 }
 body main{
-    height: 350px;
+    height: 550px;
     margin-top: 40px;
+    padding-right: 10px;
     background-color: turquoise;
 }
 body main h3{
@@ -24,20 +25,30 @@ body main h3{
     padding-bottom: 30px;
 }
 #firstParagraph{
-    color: rgb(18, 71, 1);
+    color: rgb(255, 22, 22);
     font-style: oblique;
-    font-size: 20px;
+    font-size: 15px;
     padding-bottom: 10px;
 }
-#secondParagraph{
-    color: rgb(18, 71, 1);
-    font-style: oblique;
-    font-size: 20px;
-    padding-bottom: 10px;
+#workexp{
+    color: rgb(7, 7, 5);
+    font-size: 20px ;
+    padding-left: 10px;
+    
 }
-#thirdParagraph{color: rgb(18, 71, 1);
+#firstlist{
+    color: rgb(45, 139, 33);
     font-style: oblique;
-    font-size: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#eduction{
+    color: rgb(7, 7, 5);
+    font-size: 20px ;
+    padding-left: 10px;
+    
+
 }
 footer{
     background-color:thistle  ;
