@@ -113,33 +113,35 @@ function fifthQ() {
 fifthQ();
 
 // Sixth Question
+function sixthQ() {
+    let sixthAnswer = '';
 
+    for (let i = 0; i < 3; i++) {
 
-let sixthAnswer = '';
+        if (i == 0) {
+            sixthAnswer = prompt('Guess a number between 0-15');
+        }
 
-for (let i = 0; i < 3; i++) {
-
-    if(i==0){
-        sixthAnswer =prompt('Guess a number between 0-15');
+        if (sixthAnswer > 5) {
+            alert('too high');
+            sixthAnswer = prompt('Guess again');
+        } else if (sixthAnswer < 5) {
+            alert('too low');
+            sixthAnswer = prompt('Guess again');
+        }
+        if (i == 2 && sixthAnswer != 5) {
+            alert('The correct answer is 5');
+        } else if (sixthAnswer == 5) {
+            alert('Way to go, you\'ve gussed it!');
+            score++;
+            break;
+        }
+        console.log(i);
     }
 
-    if (sixthAnswer >5 ){
-        alert('too high');
-        sixthAnswer = prompt('Guess again');
-    }else if (sixthAnswer <5){
-        alert('too low');
-        sixthAnswer = prompt('Guess again');
-    }
-    if (i==2 && sixthAnswer != 5){
-        alert('The correct answer is 5');
-    }else if (sixthAnswer==5){
-        alert('Way to go, you\'ve gussed it!') ;
-        score++ ; 
-       break;  
-    }
-    console.log(i);
+
 }
-
+sixthQ();
 
 // Seventh Question
 
