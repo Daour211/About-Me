@@ -93,21 +93,24 @@ function fourthQ() {
 fourthQ();
 
 // Fifth Question
+function fifthQ() {
+    let fifthAnswer = prompt('Do I like the Anime?');
 
-let fifthAnswer = prompt('Do I like the Anime?');
+    if (fifthAnswer.toLowerCase() === 'yes' || fifthAnswer.toLowerCase() === 'y') {
+        // console.log('You are right!');
+        alert('You are right!');
+        score++;
+    } else if (fifthAnswer.toLowerCase() === 'no' || fifthAnswer.toLowerCase() === 'n') {
+        // console.log('WRONG!!!');
+        alert('WRONG!!!');
+    } else {
+        // console.log('As you like, you can ignore this question');
+        alert('As you like, you can ignore this question');
 
-if (fifthAnswer.toLowerCase() === 'yes' || fifthAnswer.toLowerCase() === 'y'){
-    // console.log('You are right!');
-    alert('You are right!');
-    score++ ; 
-} else if (fifthAnswer.toLowerCase() === 'no' || fifthAnswer.toLowerCase() === 'n'){
-    // console.log('WRONG!!!');
-    alert('WRONG!!!');
-}else{
-    // console.log('As you like, you can ignore this question');
-    alert('As you like, you can ignore this question');
+    }
 
 }
+fifthQ();
 
 // Sixth Question
 
