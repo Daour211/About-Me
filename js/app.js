@@ -10,8 +10,8 @@ alert('Welcome ' + userName );
 let score = 0;
 
 // First Question
-
-let firstAnswer = prompt('Do I like the Facebook?');
+function firstQ () {
+    let firstAnswer = prompt('Do I like the Facebook?');
 
 
 if (firstAnswer.toLowerCase() === 'yes' || firstAnswer.toLowerCase() === 'y'){
@@ -26,6 +26,9 @@ if (firstAnswer.toLowerCase() === 'yes' || firstAnswer.toLowerCase() === 'y'){
     alert('As you like, you can ignore this question');
 
 }
+
+}
+firstQ();
 
 // Second Question
 
