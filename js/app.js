@@ -144,35 +144,38 @@ function sixthQ() {
 sixthQ();
 
 // Seventh Question
+function seventhQ() {
+    let country = ['japan', 'america', 'england', 'germany', 'palestine', 'australia'];
+    let answerCountry = prompt('Which country you think I would like to visit?' + '\n' + 'You have the following countries to choose from: japan,america,england,germany,palestine,australia');
 
-let country= ['japan','america','england','germany','palestine','australia'];
-let answerCountry = prompt('Which country you think I would like to visit?' + '\n' + 'You have the following countries to choose from: japan,america,england,germany,palestine,australia');
+    for (let i = 0; i < 5; i++) {
 
-for (let i = 0; i<5;i++){
+        if (answerCountry.toLowerCase() === 'japan') {
+            alert('you got it!');
+            console.log('you got it!');
+            score++;
+            break;
+        } else if (answerCountry.toLowerCase() === 'england') {
+            alert('you got it!');
+            console.log('you got it!');
+            score++;
+            break;
 
-    if (answerCountry.toLowerCase() === 'japan') {
-        alert('you got it!');   
-        console.log('you got it!');
-        score++ ; 
-        break;
-    }else if (answerCountry.toLowerCase() === 'england') {
-        alert('you got it!');   
-        console.log('you got it!');
-        score++ ; 
-        break;
-            
-    }else if (answerCountry.toLowerCase() === 'palestine') {
-        alert('you got it!');   
-        console.log('you got it!');
-        score++ ; 
-        break;
-        
-    }else{
-        answerCountry = prompt('Worng, try agian, Here are the choices: japan,america,england,germany,palestine,australia ');
-        answerCountry.toLowerCase();
+        } else if (answerCountry.toLowerCase() === 'palestine') {
+            alert('you got it!');
+            console.log('you got it!');
+            score++;
+            break;
+
+        } else {
+            answerCountry = prompt('Worng, try agian, Here are the choices: japan,america,england,germany,palestine,australia ');
+            answerCountry.toLowerCase();
+        }
+
     }
-    
+
 }
+seventhQ();
 
 alert('In fact all these countries are considered as right answer: japan, england, palestine');
  
