@@ -32,20 +32,25 @@ firstQ();
 
 // Second Question
 
-let secondAnswer = prompt('Have I ever lived outside Jordan?');
+function secondQ() {
+    let secondAnswer = prompt('Have I ever lived outside Jordan?');
 
-if (secondAnswer.toLowerCase() === 'yes' || secondAnswer.toLowerCase() === 'y'){
-    // console.log('You are right!');
-    alert('You are right !');
-    score++ ; 
-} else if (secondAnswer.toLowerCase() === 'no' || secondAnswer.toLowerCase() === 'n'){
-    // console.log('You are wrong !');
-    alert('You are wrong!');
-}else{
-    // console.log('As you like, you can ignore this question ');
-    alert('As you like, you can ignore this question ');
+    if (secondAnswer.toLowerCase() === 'yes' || secondAnswer.toLowerCase() === 'y') {
+        // console.log('You are right!');
+        alert('You are right !');
+        score++;
+    } else if (secondAnswer.toLowerCase() === 'no' || secondAnswer.toLowerCase() === 'n') {
+        // console.log('You are wrong !');
+        alert('You are wrong!');
+    } else {
+        // console.log('As you like, you can ignore this question ');
+        alert('As you like, you can ignore this question ');
+
+    }
 
 }
+secondQ();
+
 
 // Third Question
 
