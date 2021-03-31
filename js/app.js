@@ -74,21 +74,23 @@ function thirdQ() {
 thirdQ();
 
 // Fourth Question
+function fourthQ() {
+    let fourthAnswer = prompt('Do I love reading books about History?');
 
-let fourthAnswer = prompt('Do I love reading books about History?');
+    if (fourthAnswer.toLowerCase() === 'yes' || fourthAnswer.toLowerCase() === 'y') {
+        // console.log('You are right!, who doesn\'t');
+        alert('You are right!, who doesn\'t');
+        score++;
+    } else if (fourthAnswer.toLowerCase() === 'no' || fourthAnswer.toLowerCase() === 'n') {
+        // console.log('Completely wrong!');
+        alert('Completely wrong!');
+    } else {
+        // console.log('As you like, you can ignore this question');
 
-if (fourthAnswer.toLowerCase() === 'yes' || fourthAnswer.toLowerCase() === 'y'){
-    // console.log('You are right!, who doesn\'t');
-    alert('You are right!, who doesn\'t');
-    score++ ; 
-} else if (fourthAnswer.toLowerCase() === 'no' || fourthAnswer.toLowerCase() === 'n'){
-    // console.log('Completely wrong!');
-    alert('Completely wrong!');
-}else{
-    // console.log('As you like, you can ignore this question');
-    alert('As you like, you can ignore this question');
+    }
 
 }
+fourthQ();
 
 // Fifth Question
 
