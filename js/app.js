@@ -53,21 +53,25 @@ secondQ();
 
 
 // Third Question
+function thirdQ() {
+    let thirdAnswer = prompt('Do I love the junk food?');
 
-let thirdAnswer = prompt('Do I love the junk food?');
+    if (thirdAnswer.toLowerCase() === 'yes' || thirdAnswer.toLowerCase() === 'y') {
+        // console.log('Wrong Wrong!');
+        alert('Wrong Wrong!');
+    } else if (thirdAnswer.toLowerCase() === 'no' || thirdAnswer.toLowerCase() === 'n') {
+        // console.log('Completely right!');
+        alert('Completely right!');
+        score++;
+    } else {
+        // console.log('As you like, you can ignore this question');
+        alert('As you like, you can ignore this question ');
 
-if (thirdAnswer.toLowerCase() === 'yes' || thirdAnswer.toLowerCase() === 'y'){
-    // console.log('Wrong Wrong!');
-    alert('Wrong Wrong!');
-} else if (thirdAnswer.toLowerCase() === 'no' || thirdAnswer.toLowerCase() === 'n'){
-    // console.log('Completely right!');
-    alert('Completely right!');
-    score++ ; 
-}else{
-    // console.log('As you like, you can ignore this question');
-    alert('As you like, you can ignore this question ');
+    }
+
 
 }
+thirdQ();
 
 // Fourth Question
 
