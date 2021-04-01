@@ -4,7 +4,7 @@ body{
 }
 body header{
     height: 100px;
-    background-color: thistle;
+    background-color: rgba(183, 196, 66, 0.815);
 }
 body header h1{
     padding-top: 15px;
@@ -14,44 +14,79 @@ body header h1{
     font-weight: 700;
 }
 body main{
-    height: 550px;
+    height: 750px;
     margin-top: 40px;
     padding-right: 10px;
-    background-color: turquoise;
+    background-color: rgba(211, 201, 56, 0.795);
 }
 body main h3{
     font-size: 35px;
     font-weight: 500;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    margin-left: 10px;
 }
 #firstParagraph{
-    color: rgb(255, 22, 22);
+    color: rgb(14, 12, 12);
     font-style: oblique;
     font-size: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    margin-left: 5px;
 }
 #workexp{
-    color: rgb(7, 7, 5);
+    color: rgb(0, 0, 0);
     font-size: 20px ;
     padding-left: 10px;
+    padding-bottom: 13px;
     
 }
 #firstlist{
-    color: rgb(45, 139, 33);
+    color: rgb(12, 12, 11);
     font-style: oblique;
     font-size: 15px;
     padding-left: 10px;
     padding-top: 5px;
 }
-#eduction{
+#education{
     color: rgb(7, 7, 5);
     font-size: 20px ;
     padding-left: 10px;
+    padding-top: 15px;
+}
+#intern{
+    padding-top: 10px;
+}
+#secondlist{
+    color: rgb(8, 8, 8);
+    font-style: oblique;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#secondlist li{
+    padding-top: 5px;
+}
+#thirdParagraph{
+    padding-left: 5px;
+    padding-top: 10px;
+}
+main img{
+    float: right;
     
+}
+ol h5{
+    padding-top: 10px;
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 5px;
+}
+ol li{
+    padding-left: 5px;
+
 
 }
 footer{
-    background-color:thistle  ;
+    background-color: rgba(183, 196, 66, 0.815);
     height: 70px;
     margin-top: 20px;
     margin-bottom: 0%;

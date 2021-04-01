@@ -1,15 +1,15 @@
 'use strict';
 
-// Welcoming the user:
+// // Welcoming the user:
 
 alert('Welcome to About Me Game');
 
 let userName = prompt('What is your name?');
-console.log('Welcome ' + userName);
+// console.log('Welcome ' + userName);
 alert('Welcome ' + userName );
 let score = 0;
 
-// First Question
+// // First Question
 function firstQ () {
     let firstAnswer = prompt('Do I like the Facebook?');
 
@@ -30,7 +30,7 @@ if (firstAnswer.toLowerCase() === 'yes' || firstAnswer.toLowerCase() === 'y'){
 }
 firstQ();
 
-// Second Question
+// // Second Question
 
 function secondQ() {
     let secondAnswer = prompt('Have I ever lived outside Jordan?');
@@ -52,7 +52,7 @@ function secondQ() {
 secondQ();
 
 
-// Third Question
+// // Third Question
 function thirdQ() {
     let thirdAnswer = prompt('Do I love the junk food?');
 
@@ -73,7 +73,7 @@ function thirdQ() {
 }
 thirdQ();
 
-// Fourth Question
+// // Fourth Question
 function fourthQ() {
     let fourthAnswer = prompt('Do I love reading books about History?');
 
@@ -113,22 +113,34 @@ function fifthQ() {
 fifthQ();
 
 // Sixth Question
+
+// there is another method at the end of the code
 function sixthQ() {
     let sixthAnswer = '';
 
     for (let i = 0; i < 3; i++) {
 
         if (i == 0) {
-            sixthAnswer = prompt('Guess a number between 0-15');
+            sixthAnswer = prompt('Guess a number between 0-15, and you have 4 attempts');
         }
 
-        if (sixthAnswer > 5) {
+        if (sixthAnswer >9) {
             alert('too high');
             sixthAnswer = prompt('Guess again');
-        } else if (sixthAnswer < 5) {
+        }else if (sixthAnswer > 5 && sixthAnswer < 9) {
+            alert(' high');
+            sixthAnswer = prompt('Guess again');
+        } else if (sixthAnswer < 5 && sixthAnswer >= 3) {
+            alert('low');
+            sixthAnswer = prompt('Guess again');
+        }else if (sixthAnswer < 3) {
             alert('too low');
             sixthAnswer = prompt('Guess again');
+        }else{
+            alert('please enter a number between 0-15');
+            sixthAnswer = prompt('Guess again');
         }
+
         if (i == 2 && sixthAnswer != 5) {
             alert('The correct answer is 5');
         } else if (sixthAnswer == 5) {
@@ -140,47 +152,77 @@ function sixthQ() {
     }
 
 
+    
+
+
 }
 sixthQ();
 
-// Seventh Question
+// // // Seventh Question
+
+// // and there is another method using while loop
+
 function seventhQ() {
-    let country = ['japan', 'america', 'england', 'germany', 'palestine', 'australia'];
-    let answerCountry = prompt('Which country you think I would like to visit?' + '\n' + 'You have the following countries to choose from: japan,america,england,germany,palestine,australia');
+    let country = ['japan', 'england', 'palestine'];
+    let answerCountry = '';
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
 
-        if (answerCountry.toLowerCase() === 'japan') {
-            alert('you got it!');
-            console.log('you got it!');
-            score++;
-            break;
-        } else if (answerCountry.toLowerCase() === 'england') {
-            alert('you got it!');
-            console.log('you got it!');
-            score++;
-            break;
+       answerCountry = prompt('Which country you think I would like to visit?, and you have 6 attempts');
 
-        } else if (answerCountry.toLowerCase() === 'palestine') {
-            alert('you got it!');
-            console.log('you got it!');
-            score++;
-            break;
-
-        } else {
-            answerCountry = prompt('Worng, try agian, Here are the choices: japan,america,england,germany,palestine,australia ');
-            answerCountry.toLowerCase();
+        for (let j = 0; j < country.length; j++) {
+            
+            if (answerCountry === country[j]) {
+                alert('you got right, all the correct answers are '+ country);
+                score++;
+                i=6;
+            }
+            
+        }
+        
+        if (i== 5) {
+            alert('The correct answersare: ' + country);
+        }else if (i<6){
+            alert('wrong,try again');
         }
 
+    
     }
 
 }
 seventhQ();
 
-alert('In fact all these countries are considered as right answer: japan, england, palestine');
- 
-console.log('In fact all these countries are considered as right answer:,japan,america,england,germany,palestine,australia');
 
 
 
 alert('I hope that you had fun :) ' + userName + ', your got ' + score + ' out of 7'); 
+
+
+
+// Another method of solving Question 6
+
+// alert('You have to pick a number between 0-10 & you have 4 attempts')
+    // for (let i = 0; i< 4; i++) {
+
+    //         sixthAnswer=prompt('Guess a nummber ')
+    //         sixthAnswer=parseInt(sixthAnswer);
+            
+    //         if (sixthAnswer > 5) {
+    //             alert('too high');
+             
+    //         }else if (sixthAnswer < 5){
+    //             alert('too low');
+                
+    //         }else if (sixthAnswer===5){
+    //             alert('you got it!');
+    //             break;
+    //         }else{
+    //             alert('please eneter a number 0-10')
+    //         }
+
+    //         if (i==3 && sixthAnswer !== 5) {
+    //             alert('the correct asnwer is 5!');
+    //         }
+    //     }
+
+    
